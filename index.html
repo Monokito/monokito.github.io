@@ -1,52 +1,99 @@
-<?php
-/**
- * The main template file.
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link    https://codex.wordpress.org/Template_Hierarchy
- *
- * @package Shapely
- */
-get_header(); ?>
-<?php $layout_class = shapely_get_layout_class();?>
-	<div class="row">
-		<?php
-		if ( $layout_class == 'sidebar-left' ):
-			get_sidebar();
-		endif;
-		?>
-		<div id="primary" class="col-md-8 mb-xs-24 <?php echo esc_attr( $layout_class ); ?>"><?php
-			if ( have_posts() ) :
 
-				if ( is_home() && ! is_front_page() ) : ?>
-					<header>
-						<h1 class="page-title screen-reader-text"><?php esc_html( single_post_title() ); ?></h1>
-					</header>
+<!doctype html>
 
-					<?php
-				endif;
 
-				$layout_type = get_theme_mod( 'blog_layout_view', 'grid' );
 
-				get_template_part( 'template-parts/layouts/blog', $layout_type );
 
-				shapely_pagination();
+<html class="no-js" lang="">
 
-			else :
 
-				get_template_part( 'template-parts/content', 'none' );
 
-			endif; ?>
-		</div><!-- #primary -->
-		<?php
-		if ( $layout_class == 'sidebar-right' ):
-			get_sidebar();
-		endif;
-		?>
-	</div>
-<?php
-get_footer();
+
+
+
+
+<head>
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body>
+
+
+
+
+
+
+<h1> Monokito.sync project</h1>
+
+
+ <p>Hello world! This is Monokito. Currently Yumi and I are working on this site, messing around with the coding. We will be updating this site frequently.
+
+
+    On this site you will find music and writings by the Monokito.sync project.</p>
+
+
+
+
+
+
+ <h2>Monokito music and writings</h2>
+
+
+ <p>  It is very cool to share the music and writings of the Monokito.sync project with the world. You can already listen to music by Monokito.
+
+
+   We posted some nice tunes on Soundcloud. Later on we will add some more socials.</p>
+
+
+
+
+
+
+ <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/869545540&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/monokito" title="Monokito" target="_blank" style="color: #cccccc; text-decoration: none;">Monokito</a> · <a href="https://soundcloud.com/monokito/morninglight" title="Morninglight" target="_blank" style="color: #cccccc; text-decoration: none;">Morninglight</a></div>
+
+
+
+
+
+
+ <h2> Why is Monokito.sync keeping this website so basic?</h2/>
+
+
+  <p> The reason why we keep the site so basic, is that we like the web 1.0 esthetic so much. Besides that, a site is more clear when it is text based and has the relevant links on it.
+
+
+      It is nice to see that one can host a website for free, that way it is not necessary to pay a zillion dollards a month.
+
+
+      We can deliver our message and share video, music and text with you guys.</p> 
+
+
+    
+
+
+  
+
+
+ <h2> Monokito is loving simplicity?</h2/>
+
+
+ <p> Just keeping it simple, as it was in the old days. This has proven to be a wonderful view for the Monokito.sync project.
+
+
+     Have fun and keep on checking out this site. We are currently working to update this site with a nice hierarchy. </p> 
+
+
+
+
+© 2020 Monokito.sync, Inc.
